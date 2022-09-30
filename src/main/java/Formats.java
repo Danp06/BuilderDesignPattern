@@ -1,3 +1,3 @@
-public enum Formatos {
+public enum Formats {
     IMPRESO, DIGITAL, AUDIO
 }
