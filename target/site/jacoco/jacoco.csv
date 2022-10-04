@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+dp_2p2022_app_dms_team1,default,CategoriesI,21,0,0,0,2,0,1,0,1,0
+dp_2p2022_app_dms_team1,default,Director,4,0,0,0,2,0,2,0,2,0
+dp_2p2022_app_dms_team1,default,DocumentsBuilder,18,0,0,0,12,0,10,0,10,0
+dp_2p2022_app_dms_team1,default,Languages,57,0,0,0,2,0,1,0,1,0
+dp_2p2022_app_dms_team1,default,Formats,21,0,0,0,2,0,1,0,1,0

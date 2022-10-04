@@ -31,6 +31,6 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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  # Needed to get PR information, if any
           SONAR_TOKEN: b955334664f10ca86008adf12e880032d72fed02
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ISCODEVUTB_dp_2p2022_app_dms_team1
