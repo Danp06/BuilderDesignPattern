@@ -8,7 +8,7 @@ class DocumentsBuilderTest {
     void setAnno() {
         System.out.println("setYear");
         int Year = 100;
-        DocumentsBuilder instance = new DocumentsBuilder();
+        ConstructBook instance = new ConstructBook();
         instance.setAnno(Year);
         assertEquals(100, Year);
     }

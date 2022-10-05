@@ -1,6 +1,4 @@
-import javax.swing.text.Document;
-
-public class DocumentsBuilder implements Builder {
+public class ConstructBook implements Builder {
     private int anno;
     private String edition, editorial, isbn, tittle;
     private String[] authors;
