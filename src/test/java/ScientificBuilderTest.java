@@ -55,15 +55,19 @@ public class ScientificBuilderTest {
     @Test
     public void buildFormats() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
+        Formats[] formats = {Formats.DIGITAL};
+        document.formats(formats);
         library.buildDocument();
-        assertEquals(Formats.DIGITAL,Formats.DIGITAL);
+        assertEquals(formats,document.getFormats());
     }
 
     @Test
     public void buildLanguages() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals(Languages.EN, Languages.EN);
+        Languages[] languages = {Languages.EN};
+        document.languages(languages);
+        assertEquals(languages, document.getLanguages());
     }
 
     @Test

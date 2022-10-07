@@ -55,14 +55,18 @@ public class ThesisBuilderTest {
     public void buildFormats() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals(Formats.DIGITAL,Formats.DIGITAL);
+        Formats[] formats = {Formats.DIGITAL};
+        document.formats(formats);
+        assertEquals(formats,document.getFormats());
     }
 
     @Test
     public void buildLanguages() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals(Languages.ES, Languages.ES);
+        Languages[] languages = {Languages.ES};
+        document.languages(languages);
+        assertEquals(languages, document.getLanguages());
     }
 
     @Test

@@ -55,15 +55,19 @@ public class MagazineBuilderTest {
     @Test
     public void buildFormats() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
+        Formats[] formats = {Formats.PRINTED};
+        document.formats(formats);
         library.buildDocument();
-        assertEquals(Formats.PRINTED,Formats.PRINTED);
+        assertEquals(formats,document.getFormats());
     }
 
     @Test
     public void buildLanguages() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
+        Languages[] languages = {Languages.ES};
+        document.languages(languages);
         library.buildDocument();
-        assertEquals(Languages.ES, Languages.ES);
+        assertEquals(languages,document.getLanguages());
     }
 
     @Test
