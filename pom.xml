@@ -41,6 +41,10 @@
                 <configuration>
                     <excludes>
                         <exclude>Client.class</exclude>
+                        <exclude>BookBuilderTest.class</exclude>
+                        <exclude>MagazineBuilderTest.class</exclude>
+                        <exclude>ScientificBuilderTest.class</exclude>
+                        <exclude>ThesisBuilderTest.class</exclude>
                     </excludes>
                 </configuration>
                 <executions>
