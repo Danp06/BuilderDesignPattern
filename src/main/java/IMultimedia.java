@@ -1,3 +1,3 @@
 public interface IMultimedia {
-    String Categories(CategoriesI categoriesI);
+    String categories(CategoriesI categoriesI);
 }

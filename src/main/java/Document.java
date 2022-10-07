@@ -107,7 +107,7 @@ public class Document {
                 '}';
     }
 
-    public String Categories(CategoriesI categoriesI) {
-        return "The Categorie is: " + categoriesI;
+    public String categories(CategoriesI categoriesI) {
+        return "The Category is: " + categoriesI;
     }
 }

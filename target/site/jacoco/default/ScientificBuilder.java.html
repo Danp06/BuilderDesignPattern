@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ScientificBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">dp_2p2022_app_dms_team1</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">ScientificBuilder.java</span></div><h1>ScientificBuilder.java</h1><pre class="source lang-java linenums"><span class="fc" id="L1">public class ScientificBuilder extends DocumentBuilder implements IPdf, IOnLine{</span>
+    @Override
+    public void buildYear() {
+<span class="fc" id="L4">        document.year(1995);</span>
+<span class="fc" id="L5">    }</span>
+
+    @Override
+    public void buildPages() {
+<span class="fc" id="L9">        document.pages(45);</span>
+<span class="fc" id="L10">    }</span>
+
+    @Override
+    public void buildEdition() {
+<span class="fc" id="L14">        document.edition(&quot;FeriaXXI&quot;);</span>
+<span class="fc" id="L15">    }</span>
+
+    @Override
+    public void buildEditorial() {
+<span class="fc" id="L19">        document.editorial(&quot;Scientific&quot;);</span>
+<span class="fc" id="L20">    }</span>
+
+    @Override
+    public void buildIsbn() {
+<span class="fc" id="L24">        document.isbn(&quot;2315&quot;);</span>
+<span class="fc" id="L25">    }</span>
+
+    @Override
+    public void buildTitle() {
+<span class="fc" id="L29">        document.title(&quot;Discovery&quot;);</span>
+<span class="fc" id="L30">    }</span>
+
+    @Override
+    public void buildAuthors() {
+<span class="fc" id="L34">        String[] authors = {&quot;Carlos Alberto&quot;};</span>
+<span class="fc" id="L35">        document.authors(authors);</span>
+<span class="fc" id="L36">    }</span>
+
+    @Override
+    public void buildFormats() {
+<span class="fc" id="L40">        Formats[] formats = {Formats.PRINTED,Formats.DIGITAL,Formats.AUDIO};</span>
+<span class="fc" id="L41">        document.formats(formats);</span>
+<span class="fc" id="L42">    }</span>
+
+    @Override
+    public void buildLanguages() {
+<span class="fc" id="L46">        Languages[] languages = {Languages.ES,Languages.EN,Languages.IT};</span>
+<span class="fc" id="L47">        document.languages(languages);</span>
+<span class="fc" id="L48">    }</span>
+
+    @Override
+    public String operations() {
+<span class="fc" id="L52">        return &quot;Back to page&quot;;</span>
+    }
+
+    @Override
+    public String categories(CategoriesI categoriesI) {
+<span class="nc" id="L57">        return &quot;The Category is: &quot; + categoriesI;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

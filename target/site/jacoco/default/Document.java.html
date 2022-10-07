@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Document.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">dp_2p2022_app_dms_team1</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Document.java</span></div><h1>Document.java</h1><pre class="source lang-java linenums">import java.util.Arrays;
+
+public class Document {
+    private int year, pages;
+    private String edition, editorial, isbn, title;
+    private String[] authors;
+    private Formats[] formats;
+    private Languages[] languages;
+
+    public int getYear() {
+<span class="fc" id="L11">        return year;</span>
+    }
+
+    public int getPages() {
+<span class="fc" id="L15">        return pages;</span>
+    }
+
+    public String getEdition() {
+<span class="fc" id="L19">        return edition;</span>
+    }
+
+    public String getEditorial() {
+<span class="fc" id="L23">        return editorial;</span>
+    }
+
+    public String getIsbn() {
+<span class="fc" id="L27">        return isbn;</span>
+    }
+
+    public String getTitle() {
+<span class="fc" id="L31">        return title;</span>
+    }
+
+    public String[] getAuthors() {
+<span class="nc" id="L35">        return authors;</span>
+    }
+
+    public Formats[] getFormats() {
+<span class="nc" id="L39">        return formats;</span>
+    }
+
+    public Languages[] getLanguages() {
+<span class="nc" id="L43">        return languages;</span>
+    }
+
+<span class="fc" id="L46">    public Document(Formats[] formats) {</span>
+<span class="fc" id="L47">        this.formats = formats;</span>
+<span class="fc" id="L48">    }</span>
+
+    public Document year(int year) {
+<span class="fc" id="L51">        this.year = year;</span>
+<span class="fc" id="L52">        return this;</span>
+    }
+
+    public Document pages(int pages) {
+<span class="fc" id="L56">        this.pages = pages;</span>
+<span class="fc" id="L57">        return this;</span>
+    }
+
+    public Document edition(String edition) {
+<span class="fc" id="L61">        this.edition = edition;</span>
+<span class="fc" id="L62">        return this;</span>
+    }
+
+    public Document editorial(String editorial) {
+<span class="fc" id="L66">        this.editorial = editorial;</span>
+<span class="fc" id="L67">        return this;</span>
+    }
+
+    public Document isbn(String isbn) {
+<span class="fc" id="L71">        this.isbn = isbn;</span>
+<span class="fc" id="L72">        return this;</span>
+    }
+
+    public Document title(String title) {
+<span class="fc" id="L76">        this.title = title;</span>
+<span class="fc" id="L77">        return this;</span>
+    }
+
+    public Document authors(String[] authors) {
+<span class="fc" id="L81">        this.authors = authors;</span>
+<span class="fc" id="L82">        return this;</span>
+    }
+
+    public Document formats(Formats[] formats){
+<span class="fc" id="L86">        this.formats = formats;</span>
+<span class="fc" id="L87">        return this;</span>
+    }
+
+    public Document languages(Languages[] languages) {
+<span class="fc" id="L91">        this.languages = languages;</span>
+<span class="fc" id="L92">        return this;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L97">        return &quot;Document{&quot; +</span>
+                &quot;year=&quot; + year +
+                &quot;, pages=&quot; + pages +
+                &quot;, edition='&quot; + edition + '\'' +
+                &quot;, editorial='&quot; + editorial + '\'' +
+                &quot;, isbn='&quot; + isbn + '\'' +
+                &quot;, title='&quot; + title + '\'' +
+<span class="nc" id="L104">                &quot;, authors=&quot; + Arrays.toString(authors) +</span>
+<span class="nc" id="L105">                &quot;, formats=&quot; + Arrays.toString(formats) +</span>
+<span class="nc" id="L106">                &quot;, languages=&quot; + Arrays.toString(languages) +</span>
+                '}';
+    }
+
+    public String categories(CategoriesI categoriesI) {
+<span class="fc" id="L111">        return &quot;The Category is: &quot; + categoriesI;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

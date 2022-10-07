@@ -31,7 +31,7 @@ public class MagazineBuilder extends DocumentBuilder implements IOnLine{
 
     @Override
     public void buildAuthors() {
-        String authors[] = {"Alex"};
+        String[] authors = {"Alex Flores"};
         document.authors(authors);
     }
 
@@ -44,18 +44,18 @@ public class MagazineBuilder extends DocumentBuilder implements IOnLine{
 
     @Override
     public void buildFormats() {
-        Formats formats[] = {Formats.PRINTED,Formats.DIGITAL};
+        Formats[] formats = {Formats.PRINTED,Formats.DIGITAL};
         document.formats(formats);
     }
 
     @Override
     public void buildLanguages() {
-        Languages languages[] = {Languages.ES};
+        Languages[] languages = {Languages.ES};
         document.languages(languages);
     }
 
     @Override
-    public String Categories(CategoriesI categoriesI) {
-        return "The Categorie is: " + categoriesI;
+    public String categories(CategoriesI categoriesI) {
+        return "The Category is: " + categoriesI;
     }
 }

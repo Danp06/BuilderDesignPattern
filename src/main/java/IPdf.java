@@ -1,5 +1,5 @@
 public interface IPdf {
-    public abstract String Operaciones();
+    String operations();
 
-    String Categories(CategoriesI categoriesI);
+    String categories(CategoriesI categoriesI);
 }

@@ -27,6 +27,6 @@ public class Client {
         library.setDocumentBuilder(document);
         library.buildDocument();
         System.out.println(library.getDocument());
-        System.out.println(library.getDocument().Categories(CategoriesI.CIVIL_LAW));
+        System.out.println(library.getDocument().categories(CategoriesI.CIVIL_LAW));
     }
 }

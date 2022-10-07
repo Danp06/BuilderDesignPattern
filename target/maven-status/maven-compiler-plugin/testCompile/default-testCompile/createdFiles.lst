@@ -1,1 +1,3 @@
-DocumentsBuilderTest.class
+BookBuilderTest.class
+ScientificBuilderTest.class
+MagazineBuilderTest.class

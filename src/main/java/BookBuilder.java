@@ -27,34 +27,34 @@ public class BookBuilder extends DocumentBuilder implements IPdf {
 
     @Override
     public void buildTitle() {
-        document.title("El principito");
+        document.title("The little Prince");
     }
 
     @Override
     public void buildAuthors() {
-        String authors[] = {"Antoine"};
+        String[] authors = {"Antoine de Saint-Exupery"};
         document.authors(authors);
     }
 
     @Override
     public void buildFormats() {
-        Formats formats[] = {Formats.PRINTED};
+        Formats[] formats = {Formats.PRINTED};
         document.formats(formats);
     }
 
     @Override
     public void buildLanguages() {
-        Languages languages[] = {Languages.ES, Languages.FR};
+        Languages[] languages = {Languages.ES, Languages.FR};
         document.languages(languages);
     }
 
     @Override
-    public String Operaciones() {
+    public String operations() {
         return "Turning the page";
     }
 
     @Override
-    public String Categories(CategoriesI categoriesI) {
-        return "The Categorie is: " + categoriesI;
+    public String categories(CategoriesI categoriesI) {
+        return "The Category is: " + categoriesI;
     }
 }

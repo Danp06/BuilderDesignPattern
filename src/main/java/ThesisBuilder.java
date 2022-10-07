@@ -26,29 +26,29 @@ public class ThesisBuilder extends DocumentBuilder implements IOnLine{
 
     @Override
     public void buildTitle() {
-        document.title("Estudio de plantas");
+        document.title("Study of plants");
     }
 
     @Override
     public void buildAuthors() {
-        String authors[] = {"alberto","esteban","sofia"};
+        String[] authors = {"Alberto Muna","Esteban Zapata","Sofia Carson"};
         document.authors(authors);
     }
 
     @Override
     public void buildFormats() {
-        Formats formats[] = {Formats.DIGITAL};
+        Formats[] formats = {Formats.DIGITAL};
         document.formats(formats);
     }
 
     @Override
     public void buildLanguages() {
-        Languages languages[] = {Languages.ES};
+        Languages[] languages = {Languages.ES};
         document.languages(languages);
     }
 
     @Override
-    public String Categories(CategoriesI categoriesI) {
-        return "The Categorie is: " + categoriesI;
+    public String categories(CategoriesI categoriesI) {
+        return "The Category is: " + categoriesI;
     }
 }

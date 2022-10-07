@@ -1,15 +1,15 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MagazineBuilderTest {
+public class MagazineBuilderTest {
 
     Library library = new Library();
     DocumentBuilder document = null;
     MagazineBuilder documentExpect= new MagazineBuilder();
 
     @Test
-    void buildYear() {
+    public void buildYear() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -17,7 +17,7 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void buildPages() {
+    public void buildPages() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -25,7 +25,7 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void buildEdition() {
+    public void buildEdition() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -33,7 +33,7 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void buildEditorial() {
+    public void buildEditorial() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -41,7 +41,7 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void buildTitle() {
+    public void buildTitle() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -49,15 +49,15 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void buildAuthors() {
+    public void buildAuthors() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
-        assertEquals("Alex", "Alex");
+        assertEquals("Alex Flores", "Alex Flores");
     }
 
     @Test
-    void buildFormats() {
+    public void buildFormats() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -65,7 +65,7 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void buildLanguages() {
+    public void buildLanguages() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -73,15 +73,15 @@ class MagazineBuilderTest {
     }
 
     @Test
-    void categories() {
+    public void categories() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
-        assertEquals(documentExpect.getDocument().Categories(CategoriesI.ART),"The Categorie is: ART");
+        assertEquals(documentExpect.getDocument().categories(CategoriesI.ART),"The Category is: ART");
     }
 
     @Test
-    void buildIsbn() {
+    public void buildIsbn() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();

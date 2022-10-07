@@ -1,15 +1,15 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ScientificBuilderTest {
+public class ScientificBuilderTest {
 
     Library library = new Library();
     DocumentBuilder document = null;
     ScientificBuilder documentExpect= new ScientificBuilder();
 
     @Test
-    void buildYear() {
+    public void buildYear() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -17,7 +17,7 @@ class ScientificBuilderTest {
     }
 
     @Test
-    void buildPages() {
+    public void buildPages() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -25,7 +25,7 @@ class ScientificBuilderTest {
     }
 
     @Test
-    void buildEdition() {
+    public void buildEdition() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -33,7 +33,7 @@ class ScientificBuilderTest {
     }
 
     @Test
-    void buildEditorial() {
+    public void buildEditorial() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -41,23 +41,23 @@ class ScientificBuilderTest {
     }
 
     @Test
-    void buildTitle() {
+    public void buildTitle() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
-        assertEquals(documentExpect.getDocument().getTitle(),"Descubrimiento");
+        assertEquals(documentExpect.getDocument().getTitle(),"Discovery");
     }
 
     @Test
-    void buildAuthors() {
+    public void buildAuthors() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
-        assertEquals("Carlos", "Carlos");
+        assertEquals("Carlos Alberto", "Carlos Alberto");
     }
 
     @Test
-    void buildFormats() {
+    public void buildFormats() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -65,7 +65,7 @@ class ScientificBuilderTest {
     }
 
     @Test
-    void buildLanguages() {
+    public void buildLanguages() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
@@ -73,23 +73,23 @@ class ScientificBuilderTest {
     }
 
     @Test
-    void operaciones() {
+    public void operations() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
-        assertEquals(documentExpect.Operaciones(),"Back to page");
+        assertEquals(documentExpect.operations(),"Back to page");
     }
 
     @Test
-    void categories() {
+    public void categories() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();
-        assertEquals(documentExpect.getDocument().Categories(CategoriesI.ENGINEERING),"The Categorie is: ENGINEERING");
+        assertEquals(documentExpect.getDocument().categories(CategoriesI.ENGINEERING),"The Category is: ENGINEERING");
     }
 
     @Test
-    void buildIsbn() {
+    public void buildIsbn() {
         document = documentExpect;
         library.setDocumentBuilder(document = documentExpect);
         library.buildDocument();

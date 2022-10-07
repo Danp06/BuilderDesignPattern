@@ -26,34 +26,34 @@ public class ScientificBuilder extends DocumentBuilder implements IPdf, IOnLine{
 
     @Override
     public void buildTitle() {
-        document.title("Descubrimiento");
+        document.title("Discovery");
     }
 
     @Override
     public void buildAuthors() {
-        String authors[] = {"Carlos"};
+        String[] authors = {"Carlos Alberto"};
         document.authors(authors);
     }
 
     @Override
     public void buildFormats() {
-        Formats formats[] = {Formats.PRINTED,Formats.DIGITAL,Formats.AUDIO};
+        Formats[] formats = {Formats.PRINTED,Formats.DIGITAL,Formats.AUDIO};
         document.formats(formats);
     }
 
     @Override
     public void buildLanguages() {
-        Languages languages[] = {Languages.ES,Languages.EN,Languages.IT};
+        Languages[] languages = {Languages.ES,Languages.EN,Languages.IT};
         document.languages(languages);
     }
 
     @Override
-    public String Operaciones() {
+    public String operations() {
         return "Back to page";
     }
 
     @Override
-    public String Categories(CategoriesI categoriesI) {
-        return "The Categorie is: " + categoriesI;
+    public String categories(CategoriesI categoriesI) {
+        return "The Category is: " + categoriesI;
     }
 }
