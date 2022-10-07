@@ -1,97 +1,94 @@
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BookBuilderTest {
-
+    Document document = new Document(null);
     Library library = new Library();
-    DocumentBuilder document = null;
+    DocumentBuilder documentBuilder = null;
     BookBuilder documentExpect= new BookBuilder();
 
     @Test
     public void buildYear() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(library.getDocument().getYear(),1999);
     }
 
     @Test
     public void buildPages() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(documentExpect.getDocument().getPages(),150);
     }
 
     @Test
     public void buildEdition() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(documentExpect.getDocument().getEdition(),"4ta");
     }
 
     @Test
     public void buildEditorial() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(documentExpect.getDocument().getEditorial(),"Debolsillo");
     }
 
     @Test
     public void buildTitle() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(documentExpect.getDocument().getTitle(),"The little Prince");
     }
 
     @Test
     public void buildAuthors() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        documentBuilder = documentExpect;
+        String[] authors = {"Antoine de Saint-Exupery"};
+        document.authors(authors);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals("Antoine de Saint-Exupery", "Antoine de Saint-Exupery");
+        assertEquals(authors, document.getAuthors());
     }
 
     @Test
     public void buildFormats() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        documentBuilder = documentExpect;
+        Formats[] formats = {Formats.PRINTED};
+        document.formats(formats);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals(Formats.PRINTED,Formats.PRINTED);
+        assertEquals(formats,document.getFormats());
     }
 
     @Test
     public void buildLanguages() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        documentBuilder = documentExpect;
+        Languages[] languages = {Languages.ES};
+        document.languages(languages);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals(Languages.ES, Languages.ES);
+        assertEquals(languages,document.getLanguages());
     }
 
     @Test
     public void operations() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(documentExpect.operations(),"Turning the page");
     }
 
     @Test
     public void categories() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
-        assertEquals(documentExpect.getDocument().categories(CategoriesI.ART),"The Category is: ART");
+        assertEquals(documentExpect.categories(CategoriesI.ART),"The Category is: ART");
     }
-
     @Test
     public void buildIsbn() {
-        document = documentExpect;
-        library.setDocumentBuilder(document = documentExpect);
+        library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
         assertEquals(library.getDocument().getIsbn(),"1352");
     }

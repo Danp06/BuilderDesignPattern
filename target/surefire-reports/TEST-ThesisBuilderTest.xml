@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="BookBuilderTest" time="0.199" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="ThesisBuilderTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19+36-2238"/>
@@ -61,15 +61,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="BookBuilderTest" name="buildFormats" time="0.163"/>
-  <testcase classname="BookBuilderTest" name="buildAuthors" time="0.002"/>
-  <testcase classname="BookBuilderTest" name="buildIsbn" time="0.002"/>
-  <testcase classname="BookBuilderTest" name="buildYear" time="0.009"/>
-  <testcase classname="BookBuilderTest" name="buildLanguages" time="0.002"/>
-  <testcase classname="BookBuilderTest" name="buildPages" time="0.002"/>
-  <testcase classname="BookBuilderTest" name="buildTitle" time="0.001"/>
-  <testcase classname="BookBuilderTest" name="buildEditorial" time="0.005"/>
-  <testcase classname="BookBuilderTest" name="operations" time="0.003"/>
-  <testcase classname="BookBuilderTest" name="buildEdition" time="0.001"/>
-  <testcase classname="BookBuilderTest" name="categories" time="0.009"/>
+  <testcase classname="ThesisBuilderTest" name="buildFormats" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildAuthors" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildIsbn" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildYear" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildLanguages" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildPages" time="0.001"/>
+  <testcase classname="ThesisBuilderTest" name="buildTitle" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildEditorial" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="buildEdition" time="0"/>
+  <testcase classname="ThesisBuilderTest" name="categories" time="0.001"/>
 </testsuite>
