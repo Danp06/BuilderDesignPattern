@@ -7,6 +7,42 @@ public class Document {
     private Formats[] formats;
     private Languages[] languages;
 
+    public int getYear() {
+        return year;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public String getEdition() {
+        return edition;
+    }
+
+    public String getEditorial() {
+        return editorial;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String[] getAuthors() {
+        return authors;
+    }
+
+    public Formats[] getFormats() {
+        return formats;
+    }
+
+    public Languages[] getLanguages() {
+        return languages;
+    }
+
     public Document(Formats[] formats) {
         this.formats = formats;
     }

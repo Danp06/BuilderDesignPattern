@@ -1,11 +1,13 @@
 public class Library {
     private DocumentBuilder documentBuilder;
 
-    public void setDocumentBuilder(DocumentBuilder cc){this.documentBuilder=cc;}
+    public void setDocumentBuilder(DocumentBuilder cc) {
+        this.documentBuilder = cc;
+    }
 
-    public Document getDocument(){return documentBuilder.getDocument();}
-
-
+    public Document getDocument() {
+        return documentBuilder.getDocument();
+    }
 
     public void buildDocument() {
         documentBuilder.CreateNewDocument();

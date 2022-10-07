@@ -4,51 +4,29 @@ public class Client {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        Library director = new Library();
+        Library library = new Library();
 
-        DocumentBuilder constructor = null;
+        DocumentBuilder document = null;
 
-        System.out.println("Ingrese que quiere construir");
-        String type = sc.nextLine();
+        System.out.println("TYPES OF DOCUMENTS\n1.Book\n2.Magazine\n3.Thesis\n4.Scientific\n" +
+                "Select the type of document you want to build:");
+        int type = sc.nextInt();
 
-
-        if(type.equals("Book"))
-
-        {
-
-            constructor = new BookBuilder();
-
+        switch (type){
+            case 1: document = new BookBuilder();
+            break;
+            case 2: document = new MagazineBuilder();
+            break;
+            case 3: document = new ThesisBuilder();
+            break;
+            case 4: document = new ScientificBuilder();
+            break;
+            default:break;
         }
 
-        else if(type.equals("Magazine"))
-
-        {
-
-            constructor = new MagazineBuilder();
-
-        }
-
-        else if(type.equals("Thesis"))
-
-        {
-
-            constructor = new ThesisBuilder();
-
-        }
-
-        else if(type.equals("Scientific"))
-
-        {
-
-            constructor = new ScientificBuilder();
-
-        }
-
-        director.setDocumentBuilder(constructor);
-
-        director.buildDocument();
-
-        Document producto = director.getDocument();
-        System.out.println(producto);
+        library.setDocumentBuilder(document);
+        library.buildDocument();
+        System.out.println(library.getDocument());
+        System.out.println(library.getDocument().Categories(CategoriesI.CIVIL_LAW));
     }
 }
