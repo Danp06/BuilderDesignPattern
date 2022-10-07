@@ -81,6 +81,7 @@ public class MagazineBuilderTest {
     public void buildIsbn() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
+        String text = documentExpect.toString();
         assertEquals(library.getDocument().getIsbn(),"12332");
     }
 }

@@ -11,6 +11,7 @@ public class ThesisBuilderTest {
     public void buildYear() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
+        String text = documentBuilder.toString();
         assertEquals(library.getDocument().getYear(),2018);
     }
 

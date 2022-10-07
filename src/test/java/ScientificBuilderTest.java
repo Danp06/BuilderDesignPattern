@@ -74,6 +74,7 @@ public class ScientificBuilderTest {
     public void operations() {
         library.setDocumentBuilder(documentBuilder = documentExpect);
         library.buildDocument();
+        String text = document.toString();
         assertEquals(documentExpect.operations(),"Back to page");
     }
 
