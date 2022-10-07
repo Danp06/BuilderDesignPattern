@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BookBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">dp_2p2022_app_dms_team1</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">BookBuilder.java</span></div><h1>BookBuilder.java</h1><pre class="source lang-java linenums"><span class="fc" id="L1">public class BookBuilder extends DocumentBuilder implements IPdf {</span>
+
+    @Override
+    public void buildYear() {
+<span class="fc" id="L5">        document.year(1999);</span>
+<span class="fc" id="L6">    }</span>
+
+    @Override
+    public void buildPages() {
+<span class="fc" id="L10">        document.pages(150);</span>
+<span class="fc" id="L11">    }</span>
+
+    @Override
+    public void buildEdition() {
+<span class="fc" id="L15">        document.edition(&quot;4ta&quot;);</span>
+<span class="fc" id="L16">    }</span>
+
+    @Override
+    public void buildEditorial() {
+<span class="fc" id="L20">        document.editorial(&quot;Debolsillo&quot;);</span>
+<span class="fc" id="L21">    }</span>
+
+    @Override
+    public void buildIsbn() {
+<span class="fc" id="L25">        document.isbn(&quot;1352&quot;);</span>
+<span class="fc" id="L26">    }</span>
+
+    @Override
+    public void buildTitle() {
+<span class="fc" id="L30">        document.title(&quot;The little Prince&quot;);</span>
+<span class="fc" id="L31">    }</span>
+
+    @Override
+    public void buildAuthors() {
+<span class="fc" id="L35">        String[] authors = {&quot;Antoine de Saint-Exupery&quot;};</span>
+<span class="fc" id="L36">        document.authors(authors);</span>
+<span class="fc" id="L37">    }</span>
+
+    @Override
+    public void buildFormats() {
+<span class="fc" id="L41">        Formats[] formats = {Formats.PRINTED};</span>
+<span class="fc" id="L42">        document.formats(formats);</span>
+<span class="fc" id="L43">    }</span>
+
+    @Override
+    public void buildLanguages() {
+<span class="fc" id="L47">        Languages[] languages = {Languages.ES, Languages.FR};</span>
+<span class="fc" id="L48">        document.languages(languages);</span>
+<span class="fc" id="L49">    }</span>
+
+    @Override
+    public String operations() {
+<span class="fc" id="L53">        return &quot;Turning the page&quot;;</span>
+    }
+
+    @Override
+    public String categories(CategoriesI categoriesI) {
+<span class="fc" id="L58">        return &quot;The Category is: &quot; + categoriesI;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

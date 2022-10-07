@@ -1,0 +1,14 @@
+ScientificBuilder.class
+BookBuilder.class
+Client.class
+MagazineBuilder.class
+DocumentBuilder.class
+IOnLine.class
+Document.class
+IMultimedia.class
+Library.class
+ThesisBuilder.class
+Formats.class
+Languages.class
+CategoriesI.class
+IPdf.class
