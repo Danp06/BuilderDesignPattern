@@ -15,6 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>iscodevutb</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.inclusions>com/baeldung/sonar/*.java</sonar.inclusions>
     </properties>
 
     <dependencies>
@@ -41,10 +42,6 @@
                 <configuration>
                     <excludes>
                         <exclude>Client.class</exclude>
-                        <exclude>BookBuilderTest.class</exclude>
-                        <exclude>MagazineBuilderTest.class</exclude>
-                        <exclude>ScientificBuilderTest.class</exclude>
-                        <exclude>ThesisBuilderTest.class</exclude>
                     </excludes>
                 </configuration>
                 <executions>
